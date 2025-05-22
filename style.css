@@ -507,4 +507,10 @@ body.dark-mode footer * {
     background-color: #232a38 !important;
     color: #eaf6fb !important;
 }
+/* Poprawka: wymuszenie jaśniejszego tekstu w sekcji O mnie w trybie ciemnym */
+body.dark-mode .about,
+body.dark-mode .about * {
+    color: #eaf6fb !important;
+}
+
 
