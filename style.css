@@ -437,3 +437,74 @@ body.dark-mode .timeline-item h3 {
 body.dark-mode .timeline-item .icon {
     opacity: 0.85;
 }
+/* Poprawa kontrastu w trybie ciemnym dla wszystkich sekcji */
+body.dark-mode .timeline-item,
+body.dark-mode .timeline-item *,
+body.dark-mode .skill,
+body.dark-mode .skill *,
+body.dark-mode .project,
+body.dark-mode .project *,
+body.dark-mode .education,
+body.dark-mode .education *,
+body.dark-mode .about,
+body.dark-mode .about *,
+body.dark-mode .portfolio,
+body.dark-mode .portfolio *,
+body.dark-mode .contact,
+body.dark-mode .contact *,
+body.dark-mode .skills,
+body.dark-mode .skills * {
+    color: #eaf6fb !important;
+}
+
+/* Dla nagłówków */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #78c0ff !important;
+}
+
+/* Dla ikon jeśli są SVG lub emoji */
+body.dark-mode .icon {
+    opacity: 0.95;
+}
+
+/* Dla inputów i tekstów w formularzu kontaktowym */
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #232a38;
+    color: #eaf6fb !important;
+    border: 1px solid #444;
+}
+
+body.dark-mode label {
+    color: #bbb !important;
+}
+
+body.dark-mode input:focus + label,
+body.dark-mode textarea:focus + label,
+body.dark-mode input:valid + label,
+body.dark-mode textarea:valid + label {
+    color: #78c0ff !important;
+}
+
+/* Przycisk submit */
+body.dark-mode button[type="submit"] {
+    background-color: #78c0ff;
+    color: #222 !important;
+}
+body.dark-mode button[type="submit"]:hover {
+    background-color: #3498db;
+    color: #fff !important;
+}
+
+/* Stopka */
+body.dark-mode footer,
+body.dark-mode footer * {
+    background-color: #232a38 !important;
+    color: #eaf6fb !important;
+}
+
