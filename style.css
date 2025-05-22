@@ -420,3 +420,20 @@ body.dark-mode footer {
     background-color: #232a38;
     color: #f4f4f4;
 }
+/* Poprawa kontrastu w trybie ciemnym */
+body.dark-mode .timeline-item,
+body.dark-mode .timeline-item h3,
+body.dark-mode .timeline-item p,
+body.dark-mode .timeline-item b,
+body.dark-mode .timeline-item a,
+body.dark-mode .timeline-item .icon {
+    color: #eaf6fb !important; /* bardzo jasny, kontrastowy */
+}
+
+body.dark-mode .timeline-item h3 {
+    color: #78c0ff !important; /* wyraziste niebieskie nagłówki */
+}
+
+body.dark-mode .timeline-item .icon {
+    opacity: 0.85;
+}
