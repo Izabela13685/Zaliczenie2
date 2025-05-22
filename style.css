@@ -279,6 +279,8 @@ p {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
 /* Contact Section */
@@ -412,6 +414,15 @@ body.dark-mode .contact,
 body.dark-mode .contact * {
     color: #eaf6fb !important;
     border-color: #78c0ff !important;
+}
+
+/* Education dark mode wyśrodkowanie */
+body.dark-mode .education {
+    text-align: center;
+}
+body.dark-mode .education p {
+    display: inline-block;
+    text-align: center;
 }
 
 /* Ikony */
