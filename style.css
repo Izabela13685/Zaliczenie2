@@ -203,6 +203,7 @@ p {
 /* Skills Section */
 .skills {
     background-color: #fff;
+    text-align: center;
 }
 .skills-container {
     display: flex;
@@ -231,6 +232,7 @@ p {
 /* Portfolio Section */
 .portfolio {
     background-color: #f4f4f4;
+    text-align: center;
 }
 .portfolio-container {
     max-width: 1200px;
@@ -271,15 +273,18 @@ p {
 /* Education Section */
 .education {
     background-color: #fff;
+    text-align: center;
 }
 .education p {
     font-size: 1.2rem;
     color: #333;
+    margin-bottom: 10px;
 }
 
 /* Contact Section */
 .contact {
     background-color: #fff;
+    text-align: center;
 }
 .contact form {
     max-width: 600px;
@@ -357,10 +362,10 @@ footer {
     border-radius: 10px;
 }
 
-/* DARK MODE */
+/* --- DARK MODE (lepszy kontrast na wszystkich sekcjach) --- */
 body.dark-mode {
     background-color: #232a38;
-    color: #f4f4f4;
+    color: #eaf6fb;
 }
 body.dark-mode section,
 body.dark-mode .timeline,
@@ -370,7 +375,7 @@ body.dark-mode .education,
 body.dark-mode .contact,
 body.dark-mode .about {
     background-color: #232a38;
-    color: #f4f4f4;
+    color: #eaf6fb;
 }
 body.dark-mode .timeline-item,
 body.dark-mode .skill,
@@ -379,65 +384,18 @@ body.dark-mode .education,
 body.dark-mode .contact,
 body.dark-mode .about {
     background-color: #2e3440;
-    color: #f4f4f4;
+    color: #eaf6fb;
 }
 body.dark-mode .timeline-item h3,
-body.dark-mode .project h3 {
-    color: #78c0ff;
-}
-body.dark-mode .cta {
-    background: #222;
-    color: #fff;
-}
-body.dark-mode .cta:hover {
-    background: #78c0ff;
-    color: #232a38;
-}
-body.dark-mode input,
-body.dark-mode textarea {
-    background-color: #232a38;
-    color: #f4f4f4;
-    border: 1px solid #444;
-}
-body.dark-mode label {
-    color: #bbb;
-}
-body.dark-mode input:focus + label,
-body.dark-mode textarea:focus + label,
-body.dark-mode input:valid + label,
-body.dark-mode textarea:valid + label {
-    color: #78c0ff;
-}
-body.dark-mode button[type="submit"] {
-    background-color: #78c0ff;
-    color: #222;
-}
-body.dark-mode button[type="submit"]:hover {
-    background-color: #3498db;
-    color: #fff;
-}
-body.dark-mode footer {
-    background-color: #232a38;
-    color: #f4f4f4;
-}
-/* Poprawa kontrastu w trybie ciemnym */
-body.dark-mode .timeline-item,
-body.dark-mode .timeline-item h3,
-body.dark-mode .timeline-item p,
-body.dark-mode .timeline-item b,
-body.dark-mode .timeline-item a,
-body.dark-mode .timeline-item .icon {
-    color: #eaf6fb !important; /* bardzo jasny, kontrastowy */
+body.dark-mode .project h3,
+body.dark-mode h2,
+body.dark-mode h1 {
+    color: #78c0ff !important;
 }
 
-body.dark-mode .timeline-item h3 {
-    color: #78c0ff !important; /* wyraziste niebieskie nagłówki */
-}
-
-body.dark-mode .timeline-item .icon {
-    opacity: 0.85;
-}
-/* Poprawa kontrastu w trybie ciemnym dla wszystkich sekcji */
+/* Wymuszamy jasny kolor na wszystkich tekstach potomnych w sekcjach */
+body.dark-mode .about,
+body.dark-mode .about * ,
 body.dark-mode .timeline-item,
 body.dark-mode .timeline-item *,
 body.dark-mode .skill,
@@ -446,44 +404,31 @@ body.dark-mode .project,
 body.dark-mode .project *,
 body.dark-mode .education,
 body.dark-mode .education *,
-body.dark-mode .about,
-body.dark-mode .about *,
 body.dark-mode .portfolio,
 body.dark-mode .portfolio *,
-body.dark-mode .contact,
-body.dark-mode .contact *,
 body.dark-mode .skills,
-body.dark-mode .skills * {
+body.dark-mode .skills *,
+body.dark-mode .contact,
+body.dark-mode .contact * {
     color: #eaf6fb !important;
+    border-color: #78c0ff !important;
 }
 
-/* Dla nagłówków */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6 {
-    color: #78c0ff !important;
-}
-
-/* Dla ikon jeśli są SVG lub emoji */
+/* Ikony */
 body.dark-mode .icon {
     opacity: 0.95;
 }
 
-/* Dla inputów i tekstów w formularzu kontaktowym */
+/* Formularze */
 body.dark-mode input,
 body.dark-mode textarea {
     background-color: #232a38;
     color: #eaf6fb !important;
     border: 1px solid #444;
 }
-
 body.dark-mode label {
     color: #bbb !important;
 }
-
 body.dark-mode input:focus + label,
 body.dark-mode textarea:focus + label,
 body.dark-mode input:valid + label,
@@ -507,10 +452,3 @@ body.dark-mode footer * {
     background-color: #232a38 !important;
     color: #eaf6fb !important;
 }
-/* Poprawka: wymuszenie jaśniejszego tekstu w sekcji O mnie w trybie ciemnym */
-body.dark-mode .about,
-body.dark-mode .about * {
-    color: #eaf6fb !important;
-}
-
-
